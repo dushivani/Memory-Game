@@ -1,0 +1,81 @@
+<html>
+  <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      Memory Game
+    </title> <link rel = "stylesheet" type = "text/css" href = "styles.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Kirang+Haerang|Merienda" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        Your name :
+        <input type="text" id="name" placeholder="Enter your name here" autocomplete="off">
+        </input>
+        <input type="submit" id="submit" value="Submit" onclick="pName()">
+        </input>
+
+          <span onclick="openNav()">
+<img src="leaderboard2.png"></span>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<table id="myTable">
+<tr>
+<th>Player name</th>
+<th>Moves</th>
+<th>Time taken</th>
+<th>Stars</th>
+</tr></table>
+</div>
+
+
+        
+      </header>
+      <div class="main">
+        <section id="side1">
+          <h1>YOUR STATS :</h1>
+          
+          <h2><em>Time taken :</em><br></h2>
+         <span class="timer"> 
+          </span>
+          
+          <h2><em>Moves done :</em><br></h2>
+         <span class="moves">
+         </span>
+        </section>
+        <section id="side2">
+          <h1>MEMORY GAME</h1>
+          <ul class="stars"><h2><em>Your stars: </em></h2>
+          </ul>
+          <div class="restart"><h2><em>Want to restart?</em></h2>
+            <i class="fa fa-repeat">
+            </i>  
+          </div>
+      <ul class="board">
+      </ul>
+        </section>
+      </div>
+      <div class="modal">
+      </div>
+    </div>
+
+<footer><div id="connect"><div>Connect to appreciate: </div><img id="linkedin" src="linkedIn.png">
+<img id="twit" src="twitter.png"><img id="git" src="github.png"></div>
+    <center id="foot"><br>Made by Shivani Mishra <i class="far fa-heart"></i></center>
+   
+  </footer>
+
+<script src="app.js"></script>
+
+  </body>
+</html>
