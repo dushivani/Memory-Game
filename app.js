@@ -18,11 +18,16 @@ const modal=document.querySelector('.modal');
 
 let opened=[], matchVar=0, movesVar=0, starsVar=5, playerName="";
 
+
 //Function to store the name and start the timer
 function pName(){
 playerName=name.value;
 if(confirm("Game is about to start. Are you ready?")){ 
-startTimer(); lead();}
+
+startTimer(); lead();
+calStars();
+
+}
 else alert("Unsuccessful in submitting the name. \nGame initializaion aborted. \nSubmit your name successfully to start the game.")
 }
 
@@ -60,6 +65,8 @@ const starstemp='<li class="stars li"><i class="far fa-star"></i></li>'.repeat(s
 function displayStars(){
   stars.insertAdjacentHTML('beforeend',starstemp);
 }
+
+function calStars(){
 if(movesVar<19){
   setInterval(function(){
     stars.removeChild(stars.lastElementChild);
@@ -90,6 +97,7 @@ else if(movesVar>30){
 else if(movesVar<0){
   starsVar=0;
 }
+}
 
 //Function to display congratulations modal
 function displayModal(){
@@ -99,7 +107,7 @@ function displayModal(){
   if(movesVar>=0){
     var temp='<h2>You completed game with a score of '+starsVar+' out of 5 stars!<br><h3>You did it in '+movesVar+' moves and finished in '+min+' minute and '+sec+' second.</h3>';
   }
-  temp+='<center><h3>Play again<h3><br><button onclick="f2()">Close</button><button onclick="f1()">Restart</button></center>';
+  temp+='<center><button onclick="f1()">Restart</button></center>';
   modal.insertAdjacentHTML('beforeend',temp);
   main.style.display="none";
   $('.modal').attr('id','modalshow');
@@ -109,13 +117,6 @@ function displayModal(){
 function f1(){
                          location.reload(true);
                          }
-
-function f2(){
-main.style.display="flex";
-$('.main').load("index.html");
-
-$('.modal').removeAttr('modalshow');
-}
 
 
 //Timer functions
@@ -184,11 +185,6 @@ opened[0].classList.toggle('unmatch');
 opened[1].classList.toggle('unmatch'); 
 }
 
-//Function to start the game
-function game(){
-  Cards(emojis);
-  displayStars();
-
 
 //Clicking funtions
 board.addEventListener('click',function(card){
@@ -206,9 +202,6 @@ board.addEventListener('click',function(card){
   }
 });
 
-}
-
-game();
 
 
 
@@ -237,3 +230,14 @@ setInterval(function(){
     cell3.innerHTML = min+":"+sec;
     cell4.innerHTML = starsVar;}, 300);
 }
+
+
+
+
+//Function to start the game
+function game(){
+  Cards(emojis);
+  displayStars();
+}
+
+game();
