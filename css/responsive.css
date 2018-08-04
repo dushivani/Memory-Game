@@ -1,0 +1,191 @@
+@media screen and (min-width: 429px) 
+{br{
+  display: none;
+}
+  header{
+  font-size: 1em;
+  padding: 20px;
+}
+.main{
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+h1{
+  font-size: 3.2em;
+}
+h2{
+  font-size: 2.2em;
+  color: #FA28FA;
+  text-shadow: 9px 7px #FBD1FB;
+}
+#side2{
+  margin-top: 10px;
+margin-left: 0px;
+}
+
+#side1,#side2{
+  border-style: double;
+  border-color: orange;
+  border-width: 4px;
+width: 100%;
+  text-align: center;
+}
+i{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.stars{
+  margin-bottom: 10px;
+}
+.board{
+    height: 450px;
+    width: 343px;
+}
+.board>.card{
+    height: 63px;
+    width: 63px;
+    margin-right: 20px;
+}
+
+div.modalshow {
+   position: relative;
+}
+
+.modal {
+   display: none;
+}
+
+#modalshow {
+    border-radius: 5px;
+    border: 3px solid orange;
+    padding:5px;
+    display: block;
+
+    position: fixed;
+    background: #FAD1FB;
+    color: white;
+    font-size: 1.4em;
+    font-style: italic;
+    margin-left: 300px;
+    width: 800px;
+    height: 500px;
+
+}
+
+footer{
+margin-top: 1em;
+  background: #FEC881;
+  padding: 1em;  
+  color: white;
+  font-size: 1.3em;
+}
+
+
+#linkedin, #twit,#git{
+  float: none;
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-top: .3em;
+}
+#connect{
+  text-align: center;
+  background: white;
+  font-size: 2em;
+font-family: 'Kirang Haerang', cursive;
+  color: orange;
+  text-shadow: 9px 7px #FEDEB4;
+}
+#foot{margin-top: .5em;font-family: 'Merienda', cursive;}
+}
+
+
+@media screen and (min-width: 430px) and (max-width: 649px){
+header{
+font-size: 1em;
+}
+.board{
+width: 320px;
+height: 400px;
+}
+.board>.card{
+width: 60px;
+height: 60px;
+}
+img{
+margin-top: -0.65em;
+}
+h1{
+font-size: 3em;
+}
+h2{
+font-size: 2em;
+}
+#connect{
+font-size: 2em;
+}
+}
+
+@media screen and (min-width: 650px) and (max-width: 999px){
+.board{
+width: 520px;
+height: 550px;
+}
+.board>.card{
+width: 100px;
+height: 100px;
+}
+header{
+font-size: 1.5em;
+}
+img{
+margin-top: -0.4em;
+}
+}
+
+@media screen and (min-width: 1000px) {
+header{
+  background: #FEC881;
+  color: white;
+  font-size: 2.2em;
+  font-style: italic;
+  padding: 20px;
+}
+.main{
+flex-wrap: nowrap;
+  margin-top: 1em;
+}
+#side1{
+padding-top: 10em;
+width: 30%;
+}
+#side2{
+  width: 70%;    
+  margin-top: 0px;
+margin-left: 5px;
+}
+
+.board{
+    width: 550px;
+    height: 600px;
+margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.board>.card{
+    height: 100px;
+    width: 100px;
+}
+
+#linkedin, #twit,#git{
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+}
+#connect{
+  font-size: 2.5em;
+}
+img{
+  float: left;
+  margin-top: -.1em;
+}
+}
