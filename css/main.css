@@ -1,209 +1,221 @@
-header{
-     background: #FEC881;
-     color: white;
-     font-size: 1.5em;
-     font-style: italic;
-     padding: 20px;
+header {
+	background: #FEC881;
+	color: white;
+	font-size: 1.5em;
+	font-style: italic;
+	padding: 20px;
 }
- #score-board{
-     float: right;
+
+#score-board {
+	float: right;
 }
- .main{
-     display: flex;
-     margin-top: 2em;
+
+.main {
+	display: flex;
+	margin-top: 2em;
 }
- #side1,#side2{
-     border-style: double;
-     border-color: orange;
-     border-width: 4px;
-     width: 30%;
-     text-align: center;
+
+#side1,
+#side2 {
+	border-style: double;
+	border-color: orange;
+	border-width: 4px;
+	width: 30%;
+	text-align: center;
 }
- h1{
-     font-size: 3.2em;
-     font-family: 'Kirang Haerang', cursive;
-     color: orange;
-     text-shadow: 9px 7px #FEDEB4;
+
+h1 {
+	font-size: 3.2em;
+	font-family: 'Kirang Haerang', cursive;
+	color: orange;
+	text-shadow: 9px 7px #FEDEB4;
 }
- h2{
-     font-size: 2.2em;
-     color: #FA28FA;
-     text-shadow: 9px 7px #FBD1FB;
+
+h2 {
+	font-size: 2.2em;
+	color: #FA28FA;
+	text-shadow: 9px 7px #FBD1FB;
 }
- span{
-     font-size: 1.4em;
-     font-style: italic;
+
+span {
+	font-size: 1.4em;
+	font-style: italic;
 }
- #side2{
-     width: 70%;
-     margin-left: 20px;
+
+#side2 {
+	width: 70%;
+	margin-left: 20px;
 }
- .stars>h2{
-     margin-top: -13px;
+
+.stars {
+	float: left;
+	margin-left: 30px;
 }
- .restart>h2{
-     margin-top: 50px;
+
+.stars>h2 {
+	margin-top: -13px;
 }
- .board{
-     width: 70%;
-     height: 600px;
-     background: linear-gradient(130deg, lightblue 15%, lightgreen 30%, pink 40%, lightpink 55%, blue 100%);
-     border-radius: 10px;
-     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     align-items: center;
-     margin: 2em;
+
+.restart>h2 {
+	margin-top: 50px;
 }
- .board>.card{
-     height: 110px;
-     width: 110px;
-     background: white;
-     font-size: 0px;
-     color: #ffffff;
-     border-radius: 8px;
-     cursor: pointer;
-     margin-right: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     box-shadow: 7px 5px 30px 0 orange;
-     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
+
+.board {
+	width: 70%;
+	height: 600px;
+	background: linear-gradient(130deg, lightblue 15%, lightgreen 30%, pink 40%, lightpink 55%, blue 100%);
+	border-radius: 10px;
+	box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em;
+	margin-top: 2em;
+	margin-left: 7em;
 }
- ul{
-     list-style-type: none;
+
+.board>.card {
+	height: 110px;
+	width: 110px;
+	background: white;
+	font-size: 0px;
+	color: #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 7px 5px 30px 0 orange;
+	text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
 }
- .board .card.open {
-     transform: rotateY(0);
-     background: #FBD1FB;
-     cursor: default;
+
+ul {
+	list-style-type: none;
 }
- .board .card.show {
-     font-size: 50px;
+
+.board .card.open {
+	transform: rotateY(0);
+	background: #FBD1FB;
+	cursor: default;
 }
- .board .card.match {
-     cursor: default;
-     background: orange;
-     box-shadow: 7px 7px 30px 0 white;
-     font-size: 50px;
+
+.board .card.show {
+	font-size: 50px;
 }
- .board .card.unmatch {
-     cursor: default;
-     background: #FB505C;
-     font-size: 50px;
-     animation: shake 1s;
+
+.board .card.match {
+	cursor: default;
+	background: orange;
+	box-shadow: 7px 7px 30px 0 white;
+	font-size: 50px;
 }
- @keyframes shake {
-     0% {
-         transform: translate(1px, 1px) rotate(0deg);
-    }
-     10% {
-         transform: translate(-1px, -2px) rotate(-1deg);
-    }
-     20% {
-         transform: translate(-3px, 0px) rotate(1deg);
-    }
-     30% {
-         transform: translate(3px, 2px) rotate(0deg);
-    }
-     40% {
-         transform: translate(1px, -1px) rotate(1deg);
-    }
-     50% {
-         transform: translate(-1px, 2px) rotate(-1deg);
-    }
-     60% {
-         transform: translate(-3px, 1px) rotate(0deg);
-    }
-     70% {
-         transform: translate(3px, 1px) rotate(-1deg);
-    }
-     80% {
-         transform: translate(-1px, -1px) rotate(1deg);
-    }
-     90% {
-         transform: translate(1px, 2px) rotate(0deg);
-    }
-     100% {
-         transform: translate(1px, -2px) rotate(-1deg);
-    }
+
+.board .card.unmatch {
+	cursor: default;
+	background: #FB505C;
+	font-size: 50px;
+	animation: shake 1s;
 }
- .modalshow {
-     position: relative;
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
 }
- .modal {
-     display: none;
+
+div.modalshow {
+	position: relative;
 }
- #modalshow {
-     border-radius: 5px;
-     border: 3px solid orange;
-     padding:5px;
-     display: block;
-     position: fixed;
-     background: #FAD1FB;
-     color: white;
-     font-size: 1.4em;
-     font-style: italic;
-     margin-left: 300px;
-     width: 800px;
-     height: 500px;
+
+.modal {
+	display: none;
 }
- footer{
-     margin-top: 1em;
-     background: #FEC881;
-     padding: 1em;
-     color: white;
-     font-size: 1.3em;
+
+#modalshow {
+	border-radius: 5px;
+	border: 3px solid orange;
+	padding: 5px;
+	display: block;
+	position: fixed;
+	background: #FAD1FB;
+	color: white;
+	font-size: 1.4em;
+	font-style: italic;
+	margin-left: 300px;
+	width: 800px;
+	height: 500px;
 }
- #linkedin, #twit,#git{
-     float: none;
-     margin-left: 1em;
-     margin-right: 1em;
-     margin-top: .3em;
+
+footer {
+	margin-top: 1em;
+	background: #FEC881;
+	padding: 1em;
+	color: white;
+	font-size: 1.3em;
 }
- #connect{
-     text-align: center;
-     background: white;
-     font-size: 2em;
-     font-family: 'Kirang Haerang', cursive;
-     color: orange;
-     text-shadow: 9px 7px #FEDEB4;
+
+#linkedin,
+#twit,
+#git {
+	float: none;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: .3em;
 }
- #foot{
-     font-family: 'Merienda', cursive;
+
+#connect {
+	text-align: center;
+	background: white;
+	font-size: 2em;
+	font-family: 'Kirang Haerang', cursive;
+	color: orange;
+	text-shadow: 9px 7px #FEDEB4;
 }
- .sidenav {
-     height: 100%;
-     width: 0;
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     left: 0;
-     background-color: #FBD1FB;
-     overflow-x: hidden;
-     transition: 0.5s;
-     padding-top: 60px;
+
+#foot {
+	font-family: 'Merienda', cursive;
 }
- .sidenav a {
-     padding: 8px 8px 8px 32px;
-     text-decoration: none;
-     font-size: 25px;
-     color: #818181;
-     display: block;
-     transition: 0.3s;
+
+img {
+	float: left;
+	margin-top: -.35em;
+	height: 50px;
+	cursor: pointer;
 }
- .sidenav a:hover {
-     color: #f1f1f1;
-}
- .sidenav .closebtn {
-     position: absolute;
-     top: 0;
-     right: 25px;
-     font-size: 36px;
-     margin-left: 50px;
-}
- button{
-     margin-right: 20px;
-     padding: 10px;
+
+button {
+	margin-right: 20px;
+	padding: 10px;
 }
