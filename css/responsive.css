@@ -131,6 +131,9 @@
      img{
          margin-top: -0.4em;
     }
+    .stars{
+        margin-left: 50px;
+    }
 }
  @media screen and (min-width: 1000px) {
      header{
@@ -174,5 +177,8 @@
      img{
          float: left;
          margin-top: -.1em;
+    }
+    .stars{
+        margin-left: 10px;
     }
 }
