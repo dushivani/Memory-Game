@@ -22,7 +22,7 @@ let opened=[], matchVar=0, movesVar=0, starsVar=5, playerName="";
 function pName(){
 playerName=name.value;
 if(confirm("Game is about to start. Are you ready?")){ 
-startTimer(); lead();
+startTimer();
 calStars(); 
 
 
